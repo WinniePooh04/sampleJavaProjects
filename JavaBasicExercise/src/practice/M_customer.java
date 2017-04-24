@@ -12,6 +12,7 @@ public class M_customer {
     private Integer sum_qty;
     private String staff_cd;
     private String part_cd;
+    private Date update_dt;
     
     public String getStaff_cd() {
 		return staff_cd;
@@ -92,6 +93,14 @@ public class M_customer {
 		this.create_dt = create_dt;
 	}
 	
+	public Date getUpdate_dt() {
+		return update_dt;
+	}
+
+	public void setUpdate_dt(Date update_dt) {
+		this.update_dt = update_dt;
+	}
+
 	public String getCusInfo() {
 		return customer_name + '\n' + address ;
 	}
